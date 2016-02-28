@@ -1,11 +1,12 @@
-Players = new Mongo.Collection("players");
-Roster  = new Mongo.Collection("roster");
+Router.route('/selection');
 
-if (Meteor.isClient) {
-}
 
-if (Meteor.isServer) {
-}
+
+// if (Meteor.isClient) {
+// }
+
+// if (Meteor.isServer) {
+// }
 
 // Template.field.events({
 //     'click .position': function (ev) {
