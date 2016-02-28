@@ -33,7 +33,9 @@ Files:
   for all pages.  For example, we want the roster code to remove a player from
   the roster when we click on it when we are on the "selection" page, but on the
   "match" page we want to put that player into the lineup. To fix this we have a
-  convention of ... just use different names?
+  convention of using html/css class names in a way that corresponds to the
+  javascript that uses those class names to namespace the events to the page it
+  is used on?
 
 #Dev
 
