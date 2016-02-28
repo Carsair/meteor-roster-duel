@@ -1,1 +1,1 @@
-Roster  = new Mongo.Collection("roster");
+Roster = new Mongo.Collection("roster");

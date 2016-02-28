@@ -19,11 +19,21 @@ Folders:
 Files:
 
   There is a file for each component in the app. Typically, a template file
-  (html) will have an associated style file (css), an associated common routing
-  file (js), and both a client and server side files (js).
+  (html) will have an associated style file (css), and associated common, route,
+  client, and server files (js).
+
+  Note, there may sometimes be a slight discrepancy if a template is named
+  differently than the route it represents (for UI reasons), or if a template
+  does not have its own route (it's used in another template).
 
   Files should only hold info/code about the component they represent.  For
   nested components this is a judgement call; favor putting it in the parent.
+
+  There is an issue that putting code for a component will enable that behavior
+  for all pages.  For example, we want the roster code to remove a player from
+  the roster when we click on it when we are on the "selection" page, but on the
+  "match" page we want to put that player into the lineup. To fix this we have a
+  convention of ... just use different names?
 
 #Dev
 
@@ -32,4 +42,4 @@ Pages:
   (todo) create account - a player can battle another user's roster
   (todo) login - a player can battle another user's roster
   selection - a user can select a roster of 15 players
-  (todo) match - a player can battle another user's roster
+  (todo) match - a player can battle another user's roster on the field
