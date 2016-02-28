@@ -42,4 +42,4 @@ Pages:
   (todo) create account - a player can battle another user's roster
   (todo) login - a player can battle another user's roster
   selection - a user can select a roster of 15 players
-  (todo) match - a player can battle another user's roster on the field
+  (in progress) match - a player can battle another user's roster on the field

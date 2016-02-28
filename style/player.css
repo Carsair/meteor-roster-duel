@@ -4,6 +4,7 @@
 
 .player.checked {
   color: gray;
+  display: none;
 }
 
 

@@ -4,12 +4,3 @@ Template.players.helpers({
     return Players.find();
   }
 });
-
-// Click to add a player to your roster.
-Template.players.events({
-  "click .player": function () {
-
-    // Add to roster.
-    Meteor.call('addToRoster', this);
-  }
-});
