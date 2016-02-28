@@ -1,3 +1,9 @@
 .player {
   cursor: pointer;
 }
+
+.player.checked {
+  color: gray;
+}
+
+
