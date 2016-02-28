@@ -19,18 +19,4 @@ Meteor.startup(function() {
   Players.insert({ name: "Player 14" });
   Players.insert({ name: "Player 15" });
   Players.insert({ name: "Player 16" });
-
-  return Meteor.methods({
-
-    removeFromRoster: function(player) {
-      return Roster.remove(player);
-    },
-
-    addToRoster: function(player) {
-      if(Roster.find().count() < 15) {
-        return Roster.insert(player);
-      }
-    }
-
-  });
 });
