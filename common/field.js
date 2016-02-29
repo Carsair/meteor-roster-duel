@@ -1,2 +1,2 @@
 Lineup = new Mongo.Collection("lineup");
-selected_player = "bob";
+selected_player = new ReactiveVar();

@@ -1,8 +1,17 @@
+// Get the selected player.
+Template.field.helpers({
+  selected_player: function () {
+    player = selected_player.get();
+    if (player.name) {
+      return player.name
+    }
+    return null
+  }
+});
+
 // Click to start adding a player to the field.
 Template.field.events({
   "click .roster .player": function () {
-    console.log("this: ", this);
-    selected_player = this;
-    console.log("selected_player: ", selected_player);
+    selected_player.set(this);
   }
 });
