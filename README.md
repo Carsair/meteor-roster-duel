@@ -10,11 +10,11 @@
 
 Folders:
 
-  style - holds css
-  templates - holds html
-  client - holds client side js
-  server - holds server side js
-  common - holds js to run on both client and server
+  * style - holds css
+  * templates - holds html
+  * client - holds client side js
+  * server - holds server side js
+  * common - holds js to run on both client and server
 
 Files:
 
@@ -41,7 +41,7 @@ Files:
 
 Pages:
 
-  (todo) create account - a player can battle another user's roster
-  (todo) login - a player can battle another user's roster
-  selection - a user can select a roster of 15 players
-  (in progress) match - a player can battle another user's roster on the field
+  * (todo) create account - a player can battle another user's roster
+  * (todo) login - a player can battle another user's roster
+  * selection - a user can select a roster of 15 players
+  * (in progress) match - a player can battle another user's roster on the field
