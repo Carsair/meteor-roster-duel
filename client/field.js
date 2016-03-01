@@ -21,14 +21,21 @@ Template.field.events({
   "click .home_team .position": function (ev) {
     player = selected_player.get();
     if (player && player.name) {
-      // Add player to field.
-      $(ev.currentTarget).text(player.name);
-      // Reset selected_player to blank.
-      selected_player.set();
-      // Mark the inserted player as already added.
-      Roster.update(player._id, {
-        $set: {checked: true}
+      // Add player to Lineup.
+      position = $(ev.currentTarget).attr("id");
+      position = position.replace("home_", "")
+      Meteor.call('updateLineup', position, player, function (err, res) {
+        if (!err) {
+          // Reset selected_player to blank.
+          selected_player.set();
+
+          // Mark the inserted player as already added.
+          Roster.update(player._id, {
+            $set: {checked: true}
+          });
+        }
       });
+
     }
     else {
       selected_player.set();

@@ -6,50 +6,7 @@
   <div>SELECTED PLAYER</div>
   <button class="player">{{selected_player}}</button>
 
-
-  <div>HOME TEAM</div>
-  <div class="home_team team">
-    <div>
-      <div class="position" id="home_rb">rb</div>
-      <div class="position" id="home_rcb">rcb</div>
-      <div class="position" id="home_lcb">lcb</div>
-      <div class="position" id="home_lb">lb</div>
-    </div>
-    <div>
-      <div class="position" id="home_rm">rm</div>
-      <div class="position" id="home_rcm">rcm</div>
-      <div class="position" id="home_lcm">lcm</div>
-      <div class="position" id="home_lm">lm</div>
-    </div>
-    <div>
-      <div class="position empty">&nbsp;</div>
-      <div class="position" id="home_rs">rs</div>
-      <div class="position" id="home_ls">ls</div>
-      <div class="position empty">&nbsp;</div>
-    </div>
-  </div>
-
-  <div>AWAY TEAM</div>
-  <div class="away_team team">
-    <div>
-      <div class="position empty">&nbsp;</div>
-      <div class="position" id="away_ls">ls</div>
-      <div class="position" id="away_rs">rs</div>
-      <div class="position empty">&nbsp;</div>
-    </div>
-    <div>
-      <div class="position" id="away_lm">lm</div>
-      <div class="position" id="away_lcm">lcm</div>
-      <div class="position" id="away_rcm">rcm</div>
-      <div class="position" id="away_rm">rm</div>
-    </div>
-    <div>
-      <div class="position" id="away_rb">rb</div>
-      <div class="position" id="away_lcb">lcb</div>
-      <div class="position" id="away_rcb">rcb</div>
-      <div class="position" id="away_lb">lb</div>
-    </div>
-  </div>
+  {{> lineup}}
 
   <a href="{{pathFor route='selection'}}">Repick team!</a>
 
